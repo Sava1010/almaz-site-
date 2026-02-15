@@ -3,476 +3,725 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ХПВТП «Алмаз» — девелопмент • інфраструктура • нерухомість</title>
-  <meta name="description" content="ХПВТП «Алмаз» (Хмельницький): девелопмент, інфраструктура, оренда складських приміщень. Розвиток ОК «Алмазний» у передмісті." />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="uk_UA" />
-  <meta property="og:title" content="ХПВТП «Алмаз» — девелопмент • інфраструктура • нерухомість" />
-  <meta property="og:description" content="Будівництво, оренда складських приміщень, розвиток ОК «Алмазний» у передмісті Хмельницького." />
-
+  <title>ХПВТП «Алмаз» — будівельна компанія, Хмельницький</title>
+  <meta name="description" content="ХПВТП «Алмаз» — будівельна компанія у Хмельницькому. Будівництво багатоквартирних і приватних будинків, девелопмент, інженерні мережі, оренда складів." />
+  <meta name="theme-color" content="#0A1E3A" />
   <style>
     :root{
-      --bg:#0b0d10;
-      --panel:#0f1217;
-      --panel2:#10151c;
-      --text:#e8edf3;
-      --muted:#a8b3c1;
-      --line:rgba(255,255,255,.10);
-      --accent:#d6b36a; /* преміум-акцент */
-      --accent2:#f0d7a2;
-      --shadow: 0 18px 60px rgba(0,0,0,.45);
-      --r:18px;
-      --max:1100px;
-      --pad:18px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial;
-      color:var(--text);
-      background:
-        radial-gradient(1200px 800px at 20% -10%, rgba(214,179,106,.18), transparent 55%),
-        radial-gradient(900px 700px at 90% 10%, rgba(240,215,162,.10), transparent 55%),
-        radial-gradient(900px 900px at 40% 120%, rgba(130,170,255,.08), transparent 55%),
-        var(--bg);
-    }
-    a{color:inherit}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
-    .topbar{
-      position:sticky;top:0;z-index:50;
-      backdrop-filter: blur(14px);
-      background: rgba(11,13,16,.70);
-      border-bottom:1px solid var(--line);
-    }
-    .nav{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:14px 0;gap:14px;
-    }
-    .brand{
-      display:flex;align-items:center;gap:12px;text-decoration:none;min-width: 240px;
-    }
-    .mark{
-      width:38px;height:38px;border-radius:12px;
-      background:
-        radial-gradient(10px 10px at 30% 30%, rgba(240,215,162,.55), transparent 60%),
-        linear-gradient(135deg, rgba(214,179,106,.35), rgba(255,255,255,.06));
-      border:1px solid rgba(214,179,106,.35);
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
-    }
-    .brand b{letter-spacing:.3px}
-    .brand .sub{color:var(--muted);font-size:12.5px}
-    .menu{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-    .menu a{
-      text-decoration:none;
-      padding:8px 10px;border-radius:999px;
-      border:1px solid transparent;
-      color:var(--muted);
-      font-size:14px;
-    }
-    .menu a:hover{
-      color:var(--text);
-      border-color:rgba(214,179,106,.25);
-      background: rgba(214,179,106,.06);
+      --bg:#071426;
+      --bg2:#0A1E3A;
+      --card:#0b203f;
+      --text:#eaf0ff;
+      --muted:rgba(234,240,255,.72);
+      --line:rgba(234,240,255,.12);
+      --accent:#9fb8ff;
+      --shadow: 0 16px 40px rgba(0,0,0,.35);
+      --radius:18px;
+      --radius2:24px;
+      --container: 1120px;
     }
 
-    .hero{padding:44px 0 22px}
-    .heroGrid{
-      display:grid;gap:18px;
-      grid-template-columns: 1.25fr .75fr;
-      align-items:stretch;
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(159,184,255,.18), transparent 60%),
+                  radial-gradient(900px 500px at 80% 0%, rgba(159,184,255,.10), transparent 55%),
+                  linear-gradient(180deg, var(--bg), #04101f 60%, #030b15);
+      color: var(--text);
+      line-height: 1.55;
     }
-    @media (max-width: 980px){
-      .heroGrid{grid-template-columns:1fr}
-      .brand{min-width:auto}
-      .menu{justify-content:flex-start}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--container);margin:0 auto;padding:0 18px}
+
+    .header{
+      position:sticky;top:0;z-index:50;
+      background: rgba(7,20,38,.72);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
     }
-    .panel{
-      background: linear-gradient(180deg, rgba(16,21,28,.92), rgba(12,15,20,.92));
+    .header__inner{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:14px; padding:12px 0;
+    }
+    .brand{display:flex;align-items:center;gap:12px;min-width:220px}
+    .brand__logo{
+      width:44px;height:44px;object-fit:contain;
+      filter: drop-shadow(0 10px 18px rgba(0,0,0,.35));
+    }
+    .brand__name{font-weight:800;letter-spacing:.2px}
+    .brand__tag{font-size:12px;color:var(--muted)}
+
+    .nav{display:flex;align-items:center;gap:18px}
+    .nav a{color:var(--muted);font-weight:700}
+    .nav a:hover{color:var(--text)}
+
+    .nav__toggle{
+      display:none;
+      width:44px;height:44px;border-radius:12px;
       border:1px solid var(--line);
-      border-radius: var(--r);
-      box-shadow: var(--shadow);
-      padding:20px;
+      background: rgba(255,255,255,.03);
+      cursor:pointer;
+    }
+    .nav__toggle span{display:block;height:2px;background:var(--text);margin:7px 10px;border-radius:2px}
+
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.18);
+      background: linear-gradient(180deg, rgba(159,184,255,.18), rgba(255,255,255,.04));
+      box-shadow: 0 12px 26px rgba(0,0,0,.26);
+      font-weight:900;
+      transition: transform .15s ease, filter .15s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform: translateY(-1px); filter: brightness(1.03)}
+    .btn--ghost{
+      background: rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow:none;
+    }
+    .btn--sm{padding:9px 12px;border-radius:12px;font-size:14px}
+
+    .hero{padding:54px 0 28px}
+    .hero__grid{
+      display:grid;
+      grid-template-columns: 1.25fr .85fr;
+      gap:22px;
+      align-items:stretch;
     }
     .kicker{
-      display:flex;gap:10px;align-items:center;flex-wrap:wrap;
-      color:var(--muted);font-size:13px;
-      margin-bottom:10px;
-    }
-    .kicker .dot{
-      width:8px;height:8px;border-radius:99px;background:var(--accent);
-      box-shadow: 0 0 0 6px rgba(214,179,106,.12);
-    }
-    h1{
-      margin:0 0 10px;
-      font-size:40px;line-height:1.12;letter-spacing:.2px;
-    }
-    @media (max-width: 520px){ h1{font-size:32px} }
-    .lead{
-      margin:0;
-      color:rgba(232,237,243,.92);
-      font-size:16.5px;
-    }
-    .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-    .chip{
-      font-size:13px;color:var(--text);
-      padding:8px 10px;border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-    }
-    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-    .btn{
-      display:inline-flex;align-items:center;gap:10px;
-      padding:10px 14px;border-radius:12px;
-      text-decoration:none;font-weight:600;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      color:var(--text);
-    }
-    .btn:hover{filter:brightness(1.06)}
-    .btn.primary{
-      border-color:rgba(214,179,106,.40);
-      background: linear-gradient(135deg, rgba(214,179,106,.22), rgba(255,255,255,.04));
-    }
-    .btn .tag{color:var(--muted);font-weight:500;font-size:13px}
-    .note{margin-top:14px;color:var(--muted);font-size:13px}
-    .divider{height:1px;background:var(--line);margin:16px 0}
-
-    section{padding:18px 0}
-    .grid2{display:grid;gap:18px;grid-template-columns:1fr 1fr}
-    @media (max-width: 980px){ .grid2{grid-template-columns:1fr} }
-    h2{margin:0 0 10px;font-size:22px;letter-spacing:.2px}
-    .muted{color:var(--muted)}
-    ul{margin:10px 0 0;padding-left:18px}
-    li{margin:6px 0}
-
-    .facts{
-      display:grid;gap:10px;
-      grid-template-columns: repeat(2, 1fr);
-      margin-top:10px;
-    }
-    @media (max-width: 520px){ .facts{grid-template-columns:1fr} }
-    .fact{
-      padding:12px 12px;border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-    }
-    .fact b{display:block;font-size:15px}
-    .fact span{display:block;color:var(--muted);font-size:13px;margin-top:2px}
-
-    .gallery{
-      display:grid;gap:10px;
-      grid-template-columns: repeat(2, 1fr);
-      margin-top:10px;
-    }
-    @media (max-width: 520px){ .gallery{grid-template-columns:1fr} }
-    .gallery img{
-      width:100%;height:220px;object-fit:cover;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.02);
-    }
-
-    .contactGrid{
-      display:grid;gap:18px;
-      grid-template-columns: 1.05fr .95fr;
-      align-items:stretch;
-    }
-    @media (max-width: 980px){ .contactGrid{grid-template-columns:1fr} }
-    .kv{display:grid;gap:10px}
-    .kvRow{
-      display:flex;gap:10px;align-items:flex-start;
-      padding:12px;border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-    }
-    .kvRow span{
-      min-width:112px;color:var(--muted)
-    }
-    iframe{
-      width:100%;height:320px;border:0;border-radius:14px;
-      background: rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.10);
-    }
-    footer{
-      padding:22px 0 40px;
+      display:inline-flex;
+      padding:6px 10px;border-radius:999px;
+      border:1px solid var(--line);
       color:var(--muted);
-      font-size:13px;
-      border-top:1px solid var(--line);
-      margin-top: 10px;
+      background: rgba(255,255,255,.03);
+      font-weight:800;font-size:12px;
+    }
+    h1{font-size:44px;line-height:1.08;margin:14px 0 12px}
+    .accent{color:var(--accent)}
+    .lead{color:var(--muted);font-size:16px;max-width:62ch}
+    .hero__cta{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 18px}
+    .hero__meta{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+      margin-top:10px;
+    }
+    .meta__item{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: 16px;
+      padding:14px;
+    }
+    .meta__num{font-weight:950;font-size:18px}
+    .meta__label{color:var(--muted);font-size:12px;margin-top:4px}
+
+    .section{padding:44px 0}
+    .section--alt{
+      background: linear-gradient(180deg, rgba(255,255,255,.03), transparent 60%);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .section__head{margin-bottom:18px}
+    .section__head h2{margin:0 0 6px;font-size:26px}
+    .section__head p{margin:0;color:var(--muted)}
+
+    .card{
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border-radius: var(--radius2);
+      padding:20px;
+      box-shadow: var(--shadow);
+    }
+    .card__title{font-weight:950;margin-bottom:10px}
+    .card__actions{margin-top:14px}
+    .link{color:var(--accent);font-weight:900}
+
+    .checklist{margin:0;padding-left:18px;color:var(--muted)}
+    .checklist li{margin:10px 0}
+
+    .grid-4{
+      display:grid;
+      grid-template-columns: repeat(4,1fr);
+      gap:12px;
+    }
+    .tile{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius);
+      padding:16px;
+    }
+    .tile h3{margin:0 0 8px;font-size:16px}
+    .tile p{margin:0;color:var(--muted);font-size:14px}
+
+    .split{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:16px;
+      align-items:start;
+    }
+    .panel{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius2);
+      padding:20px;
+    }
+    .panel__row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+    .pill{
+      padding:8px 10px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.12);
+      font-weight:900;font-size:12px;color:var(--muted);
+    }
+    .panel__big{margin:8px 0 14px}
+    .panel__bigNum{font-size:44px;font-weight:950;line-height:1}
+    .panel__bigText{color:var(--muted);margin-top:6px}
+
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .person{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius);
+      padding:16px;
+    }
+    .person__title{color:var(--muted);font-weight:900;font-size:12px}
+    .person__name{font-weight:950;font-size:18px;margin-top:6px}
+
+    .motto{
+      margin-top:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius2);
+      padding:16px;
+    }
+    .motto__label{color:var(--muted);font-weight:900;font-size:12px}
+    .motto__text{font-weight:950;font-size:18px;margin-top:6px}
+
+    .pagehead{
+      padding:34px 0 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    .pagehead h1{margin:0 0 6px;font-size:34px}
+    .pagehead p{margin:0;color:var(--muted)}
+
+    .contact-card h2{margin:0 0 12px}
+    .contact-list{display:grid;gap:12px;margin-top:8px}
+    .contact-item{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: 16px;
+      padding:12px;
+    }
+    .contact-label{color:var(--muted);font-weight:900;font-size:12px}
+    .contact-value{font-weight:900;margin-top:6px}
+    .contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+
+    .map{
+      border:1px solid var(--line);
+      border-radius: var(--radius2);
+      overflow:hidden;
+      background: rgba(255,255,255,.02);
+      box-shadow: var(--shadow);
+    }
+    .map iframe{width:100%;height:520px;display:block}
+
+    .footer{
+      margin-top:30px;
+      border-top: 1px solid var(--line);
+      background: rgba(0,0,0,.18);
+    }
+    .footer__inner{
+      padding:18px 0;
+      display:flex;align-items:flex-start;justify-content:space-between;
+      gap:14px;flex-wrap:wrap;
+    }
+    .footer__brand{font-weight:950}
+    .footer__muted{color:var(--muted);font-size:12px;margin-top:6px}
+    .footer__links{display:flex;gap:14px;flex-wrap:wrap}
+    .footer__links a{color:var(--muted);font-weight:800}
+    .footer__links a:hover{color:var(--text)}
+    .footer__bottom{padding:12px 0;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+
+    .hidden{display:none}
+
+    @media (max-width: 980px){
+      .hero__grid{grid-template-columns:1fr}
+      .grid-4{grid-template-columns:1fr 1fr}
+      .split{grid-template-columns:1fr}
+      h1{font-size:38px}
+    }
+    @media (max-width: 720px){
+      .nav{display:none;flex-direction:column;align-items:flex-start;gap:10px}
+      .nav.is-open{display:flex}
+      .nav__toggle{display:inline-block}
+      .grid-4{grid-template-columns:1fr}
+      .hero__meta{grid-template-columns:1fr}
+      .map iframe{height:420px}
     }
   </style>
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="На початок">
-        <div class="mark" aria-hidden="true"></div>
-        <div>
-          <b>ХПВТП «Алмаз»</b><br>
-          <span class="sub">Девелопмент • Інфраструктура • Нерухомість</span>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="На початок">
+        <img class="brand__logo" src="logo.png" alt="Логотип Алмаз" />
+        <div class="brand__text">
+          <div class="brand__name">ХПВТП «Алмаз»</div>
+          <div class="brand__tag">Будівництво • Девелопмент • Оренда</div>
         </div>
       </a>
 
-      <nav class="menu" aria-label="Меню">
-        <a href="#about">Про нас</a>
-        <a href="#services">Напрями</a>
-        <a href="#almazny">ОК «Алмазний»</a>
-        <a href="#leadership">Керівництво</a>
-        <a href="#facts">Факти</a>
-        <a href="#contacts">Контакти</a>
+      <button class="nav__toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Навігація">
+        <a href="#home" data-page="home">Головна</a>
+        <a href="#about" data-page="about">Про компанію</a>
+        <a href="#objects" data-page="objects">Наші об’єкти</a>
+        <a href="#rent" data-page="rent">Оренда складів</a>
+        <a class="btn btn--sm" href="#contacts" data-page="contacts">Контакти</a>
       </nav>
     </div>
   </header>
 
-  <main id="top" class="wrap">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="heroGrid">
-        <div class="panel">
-          <div class="kicker">
-            <span class="dot" aria-hidden="true"></span>
-            <span>Хмельницький • 1991–2026+</span>
-            <span class="muted">•</span>
-            <span class="muted">Офіційні контакти та дані — на цій сторінці</span>
+  <main id="main">
+    <!-- HOME -->
+    <section id="home" data-section class="page">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="kicker">Будівельна компанія • Хмельницький</p>
+            <h1>Будуємо житло та інфраструктуру. <span class="accent">Надійно.</span></h1>
+            <p class="lead">
+              ХПВТП «Алмаз» — будівельна компанія, що займається зведенням багатоквартирних та приватних будинків,
+              девелопментом земельних ділянок, створенням інженерних мереж і орендою складських приміщень.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn" href="#objects" data-page="objects">Перейти до об’єктів</a>
+              <a class="btn btn--ghost" href="#contacts" data-page="contacts">Зв’язатися</a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="meta__item">
+                <div class="meta__num">30+</div>
+                <div class="meta__label">років досвіду</div>
+              </div>
+              <div class="meta__item">
+                <div class="meta__num">Житло</div>
+                <div class="meta__label">багатоквартирне та приватне</div>
+              </div>
+              <div class="meta__item">
+                <div class="meta__num">Склади</div>
+                <div class="meta__label">оренда різних площ</div>
+              </div>
+            </div>
           </div>
 
-          <h1>Структурний девелопмент<br>і інженерна готовність територій</h1>
-
-          <p class="lead">
-            <b>ХПВТП «Алмаз»</b> — девелоперська компанія з понад 30-річним досвідом реалізації
-            будівельних та інфраструктурних проєктів у Хмельницькому та передмісті.
-            Фокус — системний підхід, довгострокова цінність і відповідальність.
-          </p>
-
-          <div class="chips" aria-label="Ключові напрями">
-            <div class="chip">Будівництво житла</div>
-            <div class="chip">Оренда складів</div>
-            <div class="chip">Інфраструктура</div>
-            <div class="chip">Розвиток територій</div>
-          </div>
-
-          <div class="cta">
-            <a class="btn primary" href="tel:+380382765154">📞 <span>Зателефонувати</span> <span class="tag">+38 (0382) 76-51-54</span></a>
-            <a class="btn" href="mailto:almazkmua@ukr.net">✉️ <span>Email</span> <span class="tag">almazkmua@ukr.net</span></a>
-            <a class="btn" href="#contacts">📍 <span>Як нас знайти</span> <span class="tag">Мазепи, 6/1</span></a>
-          </div>
-
-          <div class="note">
-            * Для Google Business Profile важливо: назва, адреса та телефон на сайті мають збігатися з профілем.
+          <div class="hero__card">
+            <div class="card">
+              <div class="card__title">Коротко про компанію</div>
+              <ul class="checklist">
+                <li>Будівництво багатоквартирних і приватних будинків</li>
+                <li>Забудова та розвиток земельних ділянок</li>
+                <li>Інженерні мережі: газ, вода, електрика, каналізація</li>
+                <li>Оренда складських приміщень</li>
+              </ul>
+              <div class="card__actions">
+                <a class="link" href="#about" data-page="about">Детальніше про компанію →</a>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <aside class="panel">
-          <h2 style="margin-top:0;">Матеріали / згадки</h2>
-          <p class="muted" style="margin:0 0 10px;">
-            Архівні публікації та матеріали (для підтвердження історії та впізнаваності бренду).
-          </p>
-          <div class="gallery" aria-label="Галерея">
-            <img src="https://who-is-who.ua/makets/robotodavci2006/almaz.jpg" alt="Матеріали (архів)" loading="lazy">
-            <img src="https://who-is-who.ua/makets/ukrinvest2007/almaz.jpg" alt="Матеріали (архів)" loading="lazy">
-            <img src="https://who-is-who.ua/makets/yuvilyars2010/gomenuk.jpg" alt="Матеріали (архів)" loading="lazy">
-            <img src="https://who-is-who.ua/makets/yuvilyars-2019/1597336497.jpg" alt="Матеріали (архів)" loading="lazy">
+      <section class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Напрями діяльності</h2>
+            <p>Ключові напрямки роботи компанії.</p>
           </div>
-          <div class="divider"></div>
-          <p class="muted" style="margin:0;">
-            Якщо дасте 6–10 сучасних фото об’єктів/складів/інфраструктури — зробимо блок “Проєкти” як у девелопера.
-          </p>
-        </aside>
-      </div>
+
+          <div class="grid-4">
+            <article class="tile">
+              <h3>Будівництво житла</h3>
+              <p>Багатоквартирні та приватні будинки, комплексна забудова територій.</p>
+            </article>
+
+            <article class="tile">
+              <h3>Девелопмент</h3>
+              <p>Розвиток земельних ділянок, реалізація проектів забудови міських територій.</p>
+            </article>
+
+            <article class="tile">
+              <h3>Інженерні мережі</h3>
+              <p>Газ, водопостачання, електропостачання, каналізаційні мережі.</p>
+            </article>
+
+            <article class="tile">
+              <h3>Оренда складів</h3>
+              <p>Складські приміщення різних площ для бізнесу та виробництва.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div class="split">
+            <div>
+              <h2>Кооператив «Алмазний»</h2>
+              <p>
+                Компанією «Алмаз» створено обслуговуючий кооператив «Алмазний» та побудовано власну інфраструктуру:
+                газ, водопровід, електропостачання та каналізаційна мережа.
+              </p>
+              <p>
+                Кооператив на сьогодні налічує <strong>понад 60 земельних ділянок</strong>, які вже мають власників та активно розбудовуються.
+              </p>
+            </div>
+
+            <div class="panel">
+              <div class="panel__row">
+                <div class="pill">Газ</div>
+                <div class="pill">Вода</div>
+                <div class="pill">Електрика</div>
+                <div class="pill">Каналізація</div>
+              </div>
+              <div class="panel__big">
+                <div class="panel__bigNum">60+</div>
+                <div class="panel__bigText">земельних ділянок</div>
+              </div>
+              <a class="btn btn--ghost" href="#contacts" data-page="contacts">Зв’язатися</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Керівництво</h2>
+            <p>Відповідальність за результат та якість виконання робіт.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="person">
+              <div class="person__title">Генеральний директор</div>
+              <div class="person__name">Гуменюк Василь Михайлович</div>
+            </div>
+
+            <div class="person">
+              <div class="person__title">Виконавчий директор</div>
+              <div class="person__name">Репетюк Євгенія Євгеніївна</div>
+            </div>
+          </div>
+
+          <div class="motto">
+            <div class="motto__label">Девіз підприємства</div>
+            <div class="motto__text">«Підприємці і влада — партнери»</div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!-- ABOUT -->
-    <section id="about">
-      <div class="panel">
-        <h2>Про компанію</h2>
-        <p class="lead" style="font-size:16px;">
-          Компанія працює з <b>1991 року</b> та спеціалізується на комплексному розвитку:
-          від будівництва житлових і виробничих об’єктів до створення повноцінної інженерної інфраструктури.
-          Фокус — <b>довгострокова цінність, системний підхід та відповідальність</b>.
-        </p>
-      </div>
-    </section>
-
-    <!-- SERVICES + PRINCIPLES -->
-    <section id="services">
-      <div class="grid2">
-        <div class="panel">
-          <h2>Напрями діяльності</h2>
-          <ul>
-            <li><b>Будівництво житлових будинків</b> та котеджних комплексів</li>
-            <li><b>Девелопмент виробничо-складської нерухомості</b></li>
-            <li><b>Оренда складських приміщень</b></li>
-            <li><b>Виробничо-інженерна інфраструктура</b></li>
-            <li><b>Розвиток територій</b> та комплексна забудова</li>
-          </ul>
-          <p class="muted" style="margin-top:10px;">
-            Формулювання підібрані нейтрально — без “тригерів” для модерації Google.
-          </p>
+    <section id="about" data-section class="page hidden">
+      <section class="pagehead">
+        <div class="container">
+          <h1>Про компанію</h1>
+          <p>ХПВТП «Алмаз» — досвід, відповідальність та системний підхід у будівництві.</p>
         </div>
+      </section>
 
-        <div class="panel">
-          <h2>Принципи</h2>
-          <p class="lead" style="font-size:16px;margin:0;">
-            <b>«Підприємництво і влада — партнери»</b>
-          </p>
-          <p class="muted" style="margin:10px 0 0;">
-            Компанія дотримується принципів прозорості, відповідальності та виконання будівельних і санітарних норм,
-            створюючи проєкти, що формують стале середовище для життя та бізнесу.
-          </p>
+      <section class="section">
+        <div class="container split">
+          <div class="card">
+            <div class="card__title">ХПВТП «Алмаз»</div>
+            <p style="margin:0;color:var(--muted)">
+              Компанія займається будівництвом багатоквартирних та приватних будинків, девелопментом земельних ділянок,
+              створенням інженерних мереж, а також здає в оренду складські приміщення різних площ.
+            </p>
+            <p style="margin:14px 0 0;color:var(--muted)">
+              Компанія має в активах земельні ділянки та бере участь у забудові міських територій у співпраці з партнерами.
+            </p>
+          </div>
+
+          <div class="panel">
+            <div class="card__title">Сильні сторони</div>
+            <ul class="checklist">
+              <li>Повний цикл робіт: від ділянки до готового об’єкта</li>
+              <li>Досвід реалізації житлових та інфраструктурних проектів</li>
+              <li>Власні земельні активи</li>
+              <li>Створення інженерної інфраструктури</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ALMAZNY -->
-    <section id="almazny">
-      <div class="panel">
-        <h2>Обслуговуючий кооператив «Алмазний»</h2>
-        <p class="lead" style="font-size:16px;">
-          У структурі компанії функціонує дочірня організація — <b>ОК «Алмазний»</b>,
-          розташований у передмісті м. Хмельницький. Проєкт налічує близько <b>70 земельних ділянок</b>
-          та має сформовану інженерну базу:
-        </p>
-        <ul>
-          <li>власне газопостачання</li>
-          <li>електропостачання</li>
-          <li>водопостачання</li>
-          <li>каналізаційна мережа</li>
-        </ul>
-        <p class="muted" style="margin-top:10px;">
-          Подача — як девелоперський проєкт: інженерна готовність та керований розвиток.
-        </p>
-      </div>
-    </section>
-
-    <!-- LEADERSHIP -->
-    <section id="leadership">
-      <div class="grid2">
-        <div class="panel">
-          <h2>Керівництво</h2>
-          <p class="lead" style="font-size:16px;margin:0;">
-            <b>Гуменюк Василь Михайлович</b><br>
-            <span class="muted">Генеральний директор ХПВТП «Алмаз»</span>
-          </p>
-          <p class="muted" style="margin-top:10px;">
-            Досвідчений керівник і фахівець у сфері будівництва та девелопменту. Лауреат і переможець професійних конкурсів
-            та відзнак у сфері управління й будівництва.
-          </p>
-          <ul>
-            <li>«Людина року» (регіональний рівень)</li>
-            <li>«Краще підприємство України» (професійні відзнаки)</li>
-            <li>професійні нагороди у сфері будівництва та управління</li>
-          </ul>
-          <p class="muted" style="margin-top:10px;">
-            (Якщо дасте точні роки/формулювання з документів — я зроблю цей блок “юридично ідеальним”.)
-          </p>
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Досвід і розвиток</h2>
+            <p>Багатопрофільний шлях, що сформував сильну матеріально-технічну базу.</p>
+          </div>
+          <div class="grid-4">
+            <article class="tile">
+              <h3>Будівництво</h3>
+              <p>Житлові об’єкти — багатоквартирні та приватні будинки.</p>
+            </article>
+            <article class="tile">
+              <h3>Матеріали</h3>
+              <p>Раніше — продаж будівельних матеріалів і металопрокату.</p>
+            </article>
+            <article class="tile">
+              <h3>Агросектор</h3>
+              <p>Досвід у суміжних напрямках: садівництво та тваринництво.</p>
+            </article>
+            <article class="tile">
+              <h3>Інфраструктура</h3>
+              <p>Газ, вода, електрика, каналізаційні мережі — підведення та розвиток.</p>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="panel">
-          <h2>Комунікація</h2>
-          <p class="muted" style="margin:0;">
-            Для партнерів та клієнтів важлива стабільність даних: один номер, одна адреса, одна назва.
-            Це підвищує довіру та зменшує ризики модерації у Google.
-          </p>
-          <div class="facts" style="margin-top:12px;">
-            <div class="fact">
-              <b>Назва</b>
-              <span>ХПВТП «Алмаз»</span>
+      <section class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Керівництво</h2>
+            <p>Ключові особи компанії.</p>
+          </div>
+          <div class="grid-2">
+            <div class="person">
+              <div class="person__title">Генеральний директор</div>
+              <div class="person__name">Гуменюк Василь Михайлович</div>
             </div>
-            <div class="fact">
-              <b>Локація</b>
-              <span>Хмельницький, Мазепи 6/1</span>
-            </div>
-            <div class="fact">
-              <b>Контакт</b>
-              <span>+38 (0382) 76-51-54</span>
-            </div>
-            <div class="fact">
-              <b>Графік</b>
-              <span>Пн–Пт 08:00–17:00</span>
+            <div class="person">
+              <div class="person__title">Виконавчий директор</div>
+              <div class="person__name">Репетюк Євгенія Євгеніївна</div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
 
-    <!-- FACTS -->
-    <section id="facts">
-      <div class="panel">
-        <h2>Масштаб та факти</h2>
-        <div class="facts">
-          <div class="fact">
-            <b>Рік заснування</b>
-            <span>1991</span>
+    <!-- OBJECTS -->
+    <section id="objects" data-section class="page hidden">
+      <section class="pagehead">
+        <div class="container">
+          <h1>Наші об’єкти</h1>
+          <p>Сторінка для переліку об’єктів і проектів (структура під додавання інформації).</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid-4">
+            <article class="tile">
+              <h3>Багатоквартирні будинки</h3>
+              <p>Перелік житлових будинків із можливістю додати адресу та короткий опис.</p>
+            </article>
+            <article class="tile">
+              <h3>Приватні будинки</h3>
+              <p>Проекти приватної забудови з можливістю додати локацію та параметри.</p>
+            </article>
+            <article class="tile">
+              <h3>Комерційні об’єкти</h3>
+              <p>Адміністративні, виробничі та інші об’єкти.</p>
+            </article>
+            <article class="tile">
+              <h3>Інженерні мережі</h3>
+              <p>Інфраструктурні роботи та мережі: газ, вода, електрика, каналізація.</p>
+            </article>
           </div>
-          <div class="fact">
-            <b>Досвід</b>
-            <span>понад 30 років діяльності</span>
-          </div>
-          <div class="fact">
-            <b>Складська нерухомість</b>
-            <span>оренда та розвиток площ</span>
-          </div>
-          <div class="fact">
-            <b>ОК «Алмазний»</b>
-            <span>≈ 70 земельних ділянок</span>
+
+          <div style="margin-top:14px" class="card">
+            <div class="card__title">Додавання об’єктів</div>
+            <ul class="checklist">
+              <li>Назва / адреса</li>
+              <li>Тип (багатоквартирний / приватний / комерційний)</li>
+              <li>Короткий опис</li>
+              <li>Статус (збудовано / в процесі / заплановано)</li>
+            </ul>
           </div>
         </div>
-        <p class="muted" style="margin-top:12px;">
-          Якщо хочете — додамо блок “Наші проєкти” (3–6 карток) і “Послуги оренди” (площі/умови) без ризикових формулювань.
-        </p>
-      </div>
+      </section>
+    </section>
+
+    <!-- RENT -->
+    <section id="rent" data-section class="page hidden">
+      <section class="pagehead">
+        <div class="container">
+          <h1>Оренда складських приміщень</h1>
+          <p>Складські приміщення різних площ для бізнесу, виробництва та логістики.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="card">
+            <div class="card__title">Склади різної площі</div>
+            <p style="margin:0;color:var(--muted)">
+              ХПВТП «Алмаз» надає в оренду складські приміщення різних площ. Умови оренди та доступні варіанти уточнюються за телефоном або електронною поштою.
+            </p>
+
+            <div class="contact-actions" style="margin-top:16px">
+              <a class="btn" href="tel:+380382765154">+38 (0382) 76-51-54</a>
+              <a class="btn btn--ghost" href="mailto:almazkmua@ukr.net">almazkmua@ukr.net</a>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="card__title">Що можна додати</div>
+            <ul class="checklist">
+              <li>Перелік доступних площ</li>
+              <li>Фото приміщень</li>
+              <li>Умови доступу та охорони</li>
+              <li>Комунікації та під’їзд</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!-- CONTACTS -->
-    <section id="contacts">
-      <div class="contactGrid">
-        <div class="panel">
-          <h2>Контакти</h2>
-          <div class="kv" role="list">
-            <div class="kvRow" role="listitem"><span>Телефон</span> <b>+38 (0382) 76-51-54</b></div>
-            <div class="kvRow" role="listitem"><span>Email</span> <b>almazkmua@ukr.net</b></div>
-            <div class="kvRow" role="listitem"><span>Адреса</span> <b>вул. Гетьмана Мазепи, 6/1, Хмельницький, Хмельницька область, 29000</b></div>
-            <div class="kvRow" role="listitem"><span>Графік</span> <b>Пн–Пт 08:00–17:00</b></div>
+    <section id="contacts" data-section class="page hidden">
+      <section class="pagehead">
+        <div class="container">
+          <h1>Контакти</h1>
+          <p>Зв’яжіться з нами за телефоном або електронною поштою.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="card contact-card">
+            <h2>ХПВТП «Алмаз»</h2>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-label">Адреса</div>
+                <div class="contact-value">
+                  вул. Гетьмана Мазепи, 6/1,<br />
+                  Хмельницький, Хмельницька область, 29000
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-label">Телефон</div>
+                <div class="contact-value">
+                  <a href="tel:+380382765154">+38 (0382) 76-51-54</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">
+                  <a href="mailto:almazkmua@ukr.net">almazkmua@ukr.net</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-actions">
+              <a class="btn" href="tel:+380382765154">Зателефонувати</a>
+              <a class="btn btn--ghost" href="mailto:almazkmua@ukr.net">Написати лист</a>
+            </div>
           </div>
 
-          <div class="cta" style="margin-top:14px;">
-            <a class="btn primary" href="tel:+380382765154">📞 Зателефонувати</a>
-            <a class="btn" href="mailto:almazkmua@ukr.net">✉️ Написати</a>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1297.8228020560127!2d27.00136869451219!3d49.41560732941335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473207006439af05%3A0x91d95703ddf1e57!2z0KXQn9CS0KLQnyDQkNCb0JzQkNCX!5e0!3m2!1suk!2sua!4v1771151818720!5m2!1suk!2sua"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-
-          <p class="muted" style="margin-top:10px;">
-            Порада: ці ж дані внесіть 1:1 у Google Business Profile (назва/адреса/телефон/графік).
-          </p>
         </div>
-
-        <div class="panel">
-          <h2>Карта</h2>
-          <iframe
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=%D0%B2%D1%83%D0%BB.%20%D0%93%D0%B5%D1%82%D1%8C%D0%BC%D0%B0%D0%BD%D0%B0%20%D0%9C%D0%B0%D0%B7%D0%B5%D0%BF%D0%B8%2C%206%2F1%2C%20%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9%2C%2029000&output=embed"
-            title="ХПВТП «Алмаз» на карті">
-          </iframe>
-          <p class="muted" style="margin-top:10px;">
-            Якщо Google запропонує відеопідтвердження — скажіть мені, я дам точний чек-лист, що знімати.
-          </p>
-        </div>
-      </div>
+      </section>
     </section>
-
-    <footer>
-      <div class="wrap" style="padding:0">
-        © <span id="y"></span> ХПВТП «Алмаз». Всі права захищено.
-      </div>
-    </footer>
   </main>
 
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">ХПВТП «Алмаз»</div>
+        <div class="footer__muted">Будівництво • Девелопмент • Оренда</div>
+      </div>
+      <div class="footer__links">
+        <a href="#home" data-page="home">Головна</a>
+        <a href="#about" data-page="about">Про компанію</a>
+        <a href="#objects" data-page="objects">Об’єкти</a>
+        <a href="#rent" data-page="rent">Оренда</a>
+        <a href="#contacts" data-page="contacts">Контакти</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> ХПВТП «Алмаз». Усі права захищено.</span>
+    </div>
+  </footer>
+
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    (function () {
+      const yearEl = document.getElementById("year");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      const toggle = document.querySelector(".nav__toggle");
+      const nav = document.querySelector(".nav");
+
+      if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+          const isOpen = nav.classList.toggle("is-open");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        nav.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => {
+            nav.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+
+      const sections = Array.from(document.querySelectorAll("[data-section]"));
+      const links = Array.from(document.querySelectorAll("[data-page]"));
+
+      function showPage(pageId){
+        sections.forEach(s => s.classList.add("hidden"));
+        const target = document.getElementById(pageId);
+        if (target) target.classList.remove("hidden");
+
+        const url = new URL(window.location.href);
+        url.hash = pageId;
+        window.history.replaceState({}, "", url);
+
+        window.scrollTo({top: 0, behavior: "instant"});
+      }
+
+      function currentHash(){
+        const h = (window.location.hash || "#home").replace("#","");
+        return h || "home";
+      }
+
+      links.forEach(l => {
+        l.addEventListener("click", (e) => {
+          const page = l.getAttribute("data-page");
+          if (!page) return;
+          e.preventDefault();
+          showPage(page);
+        });
+      });
+
+      window.addEventListener("hashchange", () => showPage(currentHash()));
+
+      showPage(currentHash());
+    })();
   </script>
 </body>
 </html>
-
