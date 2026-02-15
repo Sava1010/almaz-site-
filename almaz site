@@ -1,3 +1,344 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ХПВТП «Алмаз» — будівельна компанія, Хмельницький</title>
+  <meta name="description" content="ХПВТП «Алмаз» — будівельна компанія з Хмельницького. Будівництво багатоквартирних і приватних будинків, девелопмент, інженерні мережі, оренда складів." />
+  <meta name="theme-color" content="#0A1E3A" />
+
+  <meta property="og:title" content="ХПВТП «Алмаз»" />
+  <meta property="og:description" content="Будівництво житла та інфраструктури в Хмельницькому. Працюємо багато років — будуємо відповідально." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="На головну">
+        <img class="brand__logo" src="img/logo.png" alt="Логотип Алмаз" />
+        <div class="brand__text">
+          <div class="brand__name">ХПВТП «Алмаз»</div>
+          <div class="brand__tag">Будівництво • Девелопмент • Оренда</div>
+        </div>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Навігація">
+        <a href="about.html">Про компанію</a>
+        <a href="objects.html">Наші об’єкти</a>
+        <a href="rent.html">Оренда складів</a>
+        <a class="btn btn--sm" href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="kicker">Будівельна компанія • Хмельницький</p>
+          <h1>Будуємо житло та інфраструктуру. <span class="accent">Надійно.</span></h1>
+          <p class="lead">
+            ХПВТП «Алмаз» — компанія з Хмельницького, що працює у сфері будівництва багатоквартирних та приватних будинків,
+            розвитку земельних ділянок, створення інженерних мереж та оренди складських приміщень.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="objects.html">Подивитися об’єкти</a>
+            <a class="btn btn--ghost" href="contacts.html">Зв’язатися</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="meta__item">
+              <div class="meta__num">30+</div>
+              <div class="meta__label">років досвіду</div>
+            </div>
+            <div class="meta__item">
+              <div class="meta__num">Житло</div>
+              <div class="meta__label">багатоквартирне та приватне</div>
+            </div>
+            <div class="meta__item">
+              <div class="meta__num">Склади</div>
+              <div class="meta__label">оренда різних площ</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="card">
+            <div class="card__title">Коротко про нас</div>
+            <ul class="checklist">
+              <li>Будівництво житлових і комерційних об’єктів</li>
+              <li>Девелопмент земельних ділянок</li>
+              <li>Інженерні мережі: газ, вода, електрика, каналізація</li>
+              <li>Оренда складських приміщень</li>
+            </ul>
+            <div class="card__actions">
+              <a class="link" href="about.html">Детальніше про компанію →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECTIONS -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Напрями діяльності</h2>
+          <p>Чітко, по суті — те, що компанія робить на практиці.</p>
+        </div>
+
+        <div class="grid-4">
+          <article class="tile">
+            <h3>Будівництво житла</h3>
+            <p>Багатоквартирні та приватні будинки, комплексна забудова територій.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Девелопмент</h3>
+            <p>Розвиток земельних ділянок, підготовка територій, реалізація проектів забудови.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Інженерні мережі</h3>
+            <p>Комунікації “під ключ”: газ, водопровід, електропостачання, каналізаційні мережі.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Оренда складів</h3>
+            <p>Складські приміщення різних площ для бізнесу, виробництва та логістики.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COOP -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>Кооператив «Алмазний»</h2>
+            <p>
+              Компанією «Алмаз» створено обслуговуючий кооператив «Алмазний» та збудовано власну інфраструктуру:
+              газ, водопровід, електропостачання та каналізаційна мережа.
+            </p>
+            <p>
+              Кооператив налічує <strong>понад 60 земельних ділянок</strong>, які вже мають власників та активно розбудовуються.
+            </p>
+            <div class="note">
+              Окремий сайт кооперативу зробимо на WordPress (каталог ділянок, новини, документи).
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel__row">
+              <div class="pill">Газ</div>
+              <div class="pill">Вода</div>
+              <div class="pill">Електрика</div>
+              <div class="pill">Каналізація</div>
+            </div>
+            <div class="panel__big">
+              <div class="panel__bigNum">60+</div>
+              <div class="panel__bigText">земельних ділянок</div>
+            </div>
+            <a class="btn btn--ghost" href="contacts.html">Отримати консультацію</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANAGEMENT -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Керівництво</h2>
+          <p>Контроль якості та відповідальність за результат — на керівниках.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="person">
+            <div class="person__title">Генеральний директор</div>
+            <div class="person__name">Гуменюк Василь Михайлович</div>
+          </div>
+
+          <div class="person">
+            <div class="person__title">Виконавчий директор</div>
+            <div class="person__name">Репетюк Євгенія Євгеніївна</div>
+          </div>
+        </div>
+
+        <div class="motto">
+          <div class="motto__label">Девіз підприємства</div>
+          <div class="motto__text">«Підприємці і влада — партнери»</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <div>
+          <h2>Потрібна консультація або співпраця?</h2>
+          <p>Зв’яжіться з нами — відповімо швидко та по суті.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn" href="contacts.html">Контакти</a>
+          <a class="btn btn--ghost" href="rent.html">Оренда складів</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">ХПВТП «Алмаз»</div>
+        <div class="footer__muted">Будівництво • Девелопмент • Оренда</div>
+      </div>
+      <div class="footer__links">
+        <a href="about.html">Про компанію</a>
+        <a href="objects.html">Об’єкти</a>
+        <a href="rent.html">Оренда</a>
+        <a href="contacts.html">Контакти</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> ХПВТП «Алмаз». Усі права захищено.</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Контакти — ХПВТП «Алмаз»</title>
+  <meta name="description" content="Контакти ХПВТП «Алмаз»: адреса, телефон, email, карта проїзду." />
+  <meta name="theme-color" content="#0A1E3A" />
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="На головну">
+        <img class="brand__logo" src="img/logo.png" alt="Логотип Алмаз" />
+        <div class="brand__text">
+          <div class="brand__name">ХПВТП «Алмаз»</div>
+          <div class="brand__tag">Будівництво • Девелопмент • Оренда</div>
+        </div>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Навігація">
+        <a href="about.html">Про компанію</a>
+        <a href="objects.html">Наші об’єкти</a>
+        <a href="rent.html">Оренда складів</a>
+        <a class="btn btn--sm" href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pagehead">
+      <div class="container">
+        <h1>Контакти</h1>
+        <p>Пишіть або телефонуйте — відповімо швидко.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="card contact-card">
+          <h2>ХПВТП «Алмаз»</h2>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-label">Адреса</div>
+              <div class="contact-value">
+                вул. Гетьмана Мазепи, 6/1,<br />
+                Хмельницький, Хмельницька область, 29000
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label">Телефон</div>
+              <div class="contact-value">
+                <a href="tel:+380382765154">+38 (0382) 76-51-54</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">
+                <a href="mailto:almazkmua@ukr.net">almazkmua@ukr.net</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn" href="tel:+380382765154">Зателефонувати</a>
+            <a class="btn btn--ghost" href="mailto:almazkmua@ukr.net">Написати лист</a>
+          </div>
+
+          <div class="note">
+            Якщо потрібно — додамо форму заявки (без WordPress) через легкий сервіс або PHP на хостингу.
+          </div>
+        </div>
+
+        <div class="map">
+          <!-- Вставляю твій iframe як є -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1297.8228020560127!2d27.00136869451219!3d49.41560732941335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473207006439af05%3A0x91d95703ddf1e57!2z0KXQn9CS0KLQnyDQkNCb0JzQkNCX!5e0!3m2!1suk!2sua!4v1771151818720!5m2!1suk!2sua"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">ХПВТП «Алмаз»</div>
+        <div class="footer__muted">Будівництво • Девелопмент • Оренда</div>
+      </div>
+      <div class="footer__links">
+        <a href="about.html">Про компанію</a>
+        <a href="objects.html">Об’єкти</a>
+        <a href="rent.html">Оренда</a>
+        <a href="contacts.html">Контакти</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> ХПВТП «Алмаз». Усі права захищено.</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
 :root{
   --bg:#071426;
   --bg2:#0A1E3A;
